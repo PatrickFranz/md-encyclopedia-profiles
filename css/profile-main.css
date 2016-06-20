@@ -5,26 +5,160 @@
     Date: June 2016
 */
 
+/*  COLORS & SETTINGS
+    Colors
+    Purple: #915fb1;
+    Purple Text: #9541ba
+    Light Purple: #d7cae6
+    Gray background: #f5f5f5
+    Gray text: #949494
+    Button Pink: #db3eb1;
+    
+
+*/
+
 /*HTML Selectors*/
+*{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
 
 html{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+
+a:link{
+    color: #F2EBF7;
+}
+
+h4{
+    font-size: 1.0rem;
+    line-height: 2rem;
+    margin: 0 5px; 
 }
 
 /*ID Selectors*/
+#white-wrapper{
+    width: 100%;
+    text-align: center;  
+    background-color: white;
+}
 
+#grey-wrapper{
+    width: 100%;
+    text-align: center;  
+    background-color: #f5f5f5;
+    padding: 2rem 0;
+}
+
+#header{
+    display: inline-block;
+    position: relative;
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+    margin: 0;
+    width: 90%;
+    margin: 0 auto;    
+}
 
 /*CLASS Selectors*/
+.circle-book{
+    background-color: #8252a6;    
+    border-radius: 50%;
+    border: 5px solid #d7cae6 ;  
+    padding: 4px;  
+}
 
+.gray-text{
+    color:#949494;
+}
+
+.grey-background{
+    background-color: #949494;
+}
+
+.large-sans-text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.left{
+    float: left;
+}
+
+.purple-text{
+    color: #9541ba;
+}
+
+.right{
+    float: right;
+}
 
 /*---WEB COMPONENTS---*/
 
 /*Search Box*/
+#search{
+    padding: 0.5rem;
+    padding-right: 4rem;
+    font-size: 1rem;
+    margin-top: 3px;
+    border: 1px solid #8252a6;
+    border-radius: 3%;
+    color:#8252a6
+}
 
-/*Image Carousel*/
+::-moz-placeholder{
+    color: #d7cae6;
+}
+
+::-webkit-input-placeholder{
+    color: #d7cae6;
+}
+
+:-ms-input-placeholder{
+    color: #d7cae6;
+}
+/*Image Carousel && Bio*/
+#bio-wrapper{
+    display: flex;
+    position: relative;
+    text-align: left;
+    padding: 10px 0;
+    margin: 20px 0;
+    width: 90%;
+    margin: 0 auto;    
+    line-height: 2rem;
+    color: white;
+}
+#bio{
+    padding: 50px;
+    
+    background-image: url(../images/hero-bg_960.jpg);  
+}
+#bio ul{ 
+    position: absolute; 
+    bottom: 5px;
+       
+}
+
+#bio li{
+    display: inline-block;
+}
+
+#btn-follow{
+    position: absolute;
+    top: 1.3rem;
+    right: 1rem;
+}
 
 /*Follow Button*/
-
+.btn{
+    background-color: #db3eb1;
+    color: white;
+    padding: 0.3rem 2rem;
+    border-radius: 5%;
+}
 /*Vertical Settings Menu*/
 
 /*Noteworthy Block*/
