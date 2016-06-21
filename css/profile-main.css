@@ -9,10 +9,13 @@
     Colors
     Purple: #915fb1;
     Purple Text: #9541ba
+    Lt Purple text: #d1b3e9
     Light Purple: #d7cae6
     Gray background: #f5f5f5
     Gray text: #949494
     Button Pink: #db3eb1;
+    Lt Pink: #ff83c3
+    Twitter Blue: #55acee
     
 
 */
@@ -24,11 +27,17 @@
 }
 
 html{
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto', serif;
 }
 
 a:link{
-    color: #F2EBF7;
+    color: #d1b3e9;
+}
+
+h3{
+    font-size:2rem;
+    font-weight: 300;
+    line-height: 2rem;
 }
 
 h4{
@@ -58,7 +67,7 @@ h4{
     padding: 0.5rem 0;
     margin: 0;
     width: 90%;
-    margin: 0 auto;    
+    margin: 0 auto;  
 }
 
 /*CLASS Selectors*/
@@ -78,7 +87,8 @@ h4{
 }
 
 .large-sans-text{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+    font-weight: 100;
     font-size: 3rem;
     margin-bottom: 3rem;
 }
@@ -94,6 +104,17 @@ h4{
 .right{
     float: right;
 }
+
+.lt-purple-text{
+    color: #dfbef7;
+}
+
+.section-title{
+    margin-top: 4rem;
+    color: #db3eb1;
+}
+
+
 
 /*---WEB COMPONENTS---*/
 
@@ -119,7 +140,35 @@ h4{
 :-ms-input-placeholder{
     color: #d7cae6;
 }
+
 /*Image Carousel && Bio*/
+#bio-image{
+    width: 45%;
+}
+
+#cog-profile{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+#cog-items{
+    display: flex;
+}
+
+.dot{
+    display: inline-block;
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    margin: 0 0.2rem;
+}
+
+.active{
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
 #bio-wrapper{
     display: flex;
     position: relative;
@@ -131,25 +180,40 @@ h4{
     line-height: 2rem;
     color: white;
 }
+
 #bio{
-    padding: 50px;
-    
+    padding: 4rem 2rem;
+    font-size: 0.85rem;
     background-image: url(../images/hero-bg_960.jpg);  
 }
+
 #bio ul{ 
     position: absolute; 
-    bottom: 5px;
-       
+    bottom: 2rem;    
 }
 
 #bio li{
     display: inline-block;
+    padding: 0 0.4rem;
+    font-size: 0.75rem;
+}
+
+#bio li img{
+    margin-right: 0.2rem;
 }
 
 #btn-follow{
     position: absolute;
     top: 1.3rem;
     right: 1rem;
+}
+
+#globe-pin{
+    color: #ff83c3;
+}
+
+#twitter-link{
+    color: #55acee;
 }
 
 /*Follow Button*/
@@ -159,6 +223,15 @@ h4{
     padding: 0.3rem 2rem;
     border-radius: 5%;
 }
+
+.btn:hover{
+    background-color: #ff83c3;
+}
+
+.btn:active{
+    background-color: #dfbef7;
+}
+
 /*Vertical Settings Menu*/
 
 /*Noteworthy Block*/
