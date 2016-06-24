@@ -154,6 +154,7 @@ input{
     font-size: 0.9rem;
     line-height: 1.5rem;
     padding: 3rem 2rem 2rem;
+    margin: 0 auto;
 }
 
 /*CLASS Selectors*/
@@ -444,6 +445,27 @@ input{
 /*Bio/Work Section */
 .work-date{
     font-size: 0.8rem;
+}
+
+/* Graphs */
+#skills-bar{
+    display: flex;
+    margin: 0 auto;
+}
+
+.h-bar{
+    height: 2rem;
+    color: white;
+}
+
+.red-bar{
+    width: 10rem;
+    background: #fc5e5f;
+}
+
+.blue-bar{
+    width: 5rem;
+    background-color: #4a70eb;
 }
 
 /* Testing purposes only */
