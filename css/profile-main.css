@@ -128,6 +128,16 @@ input{
     margin: 0 auto; 
 }
 
+#skills-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    padding: 3rem 2rem 2rem;
+    margin: 0 auto;
+}
+
 #biography{
     background: white;
     position: relative;
@@ -150,12 +160,7 @@ input{
     bottom: 1rem;
 }
 
-#skills-wrapper{
-    font-size: 0.9rem;
-    line-height: 1.5rem;
-    padding: 3rem 2rem 2rem;
-    margin: 0 auto;
-}
+
 
 /*CLASS Selectors*/
 .bold{
@@ -450,22 +455,57 @@ input{
 /* Graphs */
 #skills-bar{
     display: flex;
-    margin: 0 auto;
+    width: 60%;
+    margin: 1.5rem auto;
+    padding: 1rem;    
 }
 
-.h-bar{
-    height: 2rem;
+#skill-graphs{
+   margin: 1.5rem auto;    
+}
+
+.graph-row{
+    display: inline-flex;   
+    margin-bottom: 2rem; 
+}
+
+
+.h-bar{    
     color: white;
 }
 
-.red-bar{
-    width: 10rem;
+.right-bar{
+    width: 70%;
+    text-align: left;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;  
+    padding-left: 1rem;
     background: #fc5e5f;
 }
 
-.blue-bar{
-    width: 5rem;
+.left-bar{
+    width: 30%;
+    text-align: right;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+    padding-right: 1rem;
     background-color: #4a70eb;
+}
+
+.graph{
+    margin: 0 3rem;
+}
+.graph>h4{
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+}
+
+.red-text{
+    color: #fc5e5f;
+}
+
+.blue-text{
+    color: #4a70eb;
 }
 
 /* Testing purposes only */
