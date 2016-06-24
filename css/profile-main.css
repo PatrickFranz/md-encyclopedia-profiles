@@ -27,7 +27,7 @@
 }
 
 html{
-    font-family: 'Roboto', serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 a:link{
@@ -55,11 +55,15 @@ h3{
 }
 
 h4{
-    font-size: 1.0rem;
     line-height: 2rem;
     margin: 0; 
+    font-size: 1rem;
+    font-weight: 400;
 }
 
+input{
+    font-family: 'Roboto', sans-serif;
+}
 /*ID Selectors*/
 
 #white-wrapper{
@@ -90,7 +94,73 @@ h4{
     line-height: 2.2rem;
 }
 
+#bio-wrapper{
+    display: flex;
+    position: relative;
+    text-align: left;
+    padding: 10px 0 0 0;
+    width: 90%;
+    margin: 0 auto;    
+    line-height: 2rem;
+    color: white;
+}
+
+#noteworthy-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    background-color: white;
+    width: 90%;
+}
+
+#gratitude-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    width: 90%;
+}
+
+#bio-work-wrapper{
+    display: flex;
+    width: 90%;
+    margin: 0 auto; 
+}
+
+#biography{
+    background: white;
+    position: relative;
+    line-height: 1.5rem;
+    text-align: left;
+    padding: 3rem 2rem 2rem;
+    width: 65%;
+}
+
+#work-history{
+    text-align: left;
+    padding: 3rem 2rem 2rem;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+}
+
+#work-caret{
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+#skills-wrapper{
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    padding: 3rem 2rem 2rem;
+}
+
 /*CLASS Selectors*/
+.bold{
+    font-weight: bold;
+}
+
 .circle-book{
     background-color: #8252a6;    
     border-radius: 50%;
@@ -98,8 +168,16 @@ h4{
     padding: 0.2rem 0.3rem;  
 }
 
+.lt-purple-text{
+    color: #dfbef7;
+}
+
 .gray-text{
     color:#949494;
+}
+
+.drk-gray-text{
+    color: #353535;
 }
 
 .grey-background{
@@ -116,7 +194,7 @@ h4{
 .inline-list li{
     display: inline-block;
     padding: 0 0.4rem;
-    font-size: 0.75rem;
+    font-size: 0.70rem;
 }
 
 .left{
@@ -129,10 +207,6 @@ h4{
 
 .right{
     float: right;
-}
-
-.lt-purple-text{
-    color: #dfbef7;
 }
 
 .section-title{
@@ -194,16 +268,7 @@ h4{
     background-color: rgba(255, 255, 255, 0.9);
 }
 
-#bio-wrapper{
-    display: flex;
-    position: relative;
-    text-align: left;
-    padding: 10px 0 0 0;
-    width: 90%;
-    margin: 0 auto;    
-    line-height: 2rem;
-    color: white;
-}
+
 
 #bio{
     padding: 4rem 2rem;
@@ -213,7 +278,7 @@ h4{
 
 #bio ul{ 
     position: absolute; 
-    bottom: 1rem;    
+    bottom: 1rem;
 }
 
 
@@ -255,14 +320,7 @@ h4{
 /*Vertical Settings Menu*/
 
 /*Noteworthy Block*/
-#noteworthy-wrapper{
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    padding: 3rem 1rem;
-    background-color: white;
-    width: 90%;
-}
+
 
 #noteworthy-items{
     display: flex;
@@ -289,11 +347,6 @@ h4{
     color: #949494;
 }
 
-.note-item h4{
-    font-size: 1.2rem;
-    font-weight: 400;
-}
-
 .note-item p{
     font-size: 0.9rem;
     color: #353535;
@@ -301,7 +354,97 @@ h4{
 }
 
 /*Gratitude Circles*/
+#gratitude-wrapper h4{
+    color: #949494;
+}
 
+#gratitude-circles{
+    display: flex;
+    padding: 1em 0;
+    margin: 1rem auto;
+}
+
+#gh-circle{
+    border-color: #f5e9ed;
+}
+
+#tip-circle{
+    border-color: #d7f7df;
+}
+
+#twitter-circle{
+    border-color: #d6f3fb;
+}
+
+.grat-circle{     
+    float: left;
+    position: relative;
+    max-width: 12rem;
+    min-width: 12rem;
+    max-height: 12rem;
+    min-height: 12rem;
+    border: 0.4rem solid;
+    border-radius: 50%;
+    padding: 2rem 2rem;
+    margin-right: 4rem;
+    color: #949494;
+    background-color: white;
+    font-size: 0.8rem;
+}
+
+.grat-circle a{
+    color: #b1b1b1;
+}
+
+.grat-circle a:hover{
+    color: #d4d4d4;
+    text-decoration: none;
+}
+
+.grat-circle a:visited{
+    color: #b1b1b1;
+}
+
+.grat-el{
+    margin-bottom: 1rem;
+}
+
+.grat-label{
+    position: absolute;
+    width: 100%;
+    bottom: -1.5rem;
+    left: 0;
+    font-size: 0.7rem;
+    color: #b1b1b1;
+    
+}
+
+.twitter-text{
+    color: #5ea9dd;
+}
+
+#gh-circle .btn{
+    background-color: #ec4c7a;
+    padding: 0.2rem 1rem;
+}
+
+#tip-inp{
+    max-width: 4rem;
+    border-radius: 5%;
+    font-size: 1.5rem;
+    padding: 0.3rem;
+    margin: 0.2em 0;
+}
+
+#tip-circle .btn{
+    background-color: #30b54c;    
+    padding: 0.2rem 0.5rem;
+}
+
+/*Bio/Work Section */
+.work-date{
+    font-size: 0.8rem;
+}
 
 /* Testing purposes only */
 
