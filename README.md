@@ -5,7 +5,8 @@ The Encyclopedia Profiles project is where you will find detailed information on
 ##Members:
 - Eric Osorio  - HTML
 - Patrick Franz - CSS
-- 
+
+
 ##Work Flow
 Eric builds out the HTML including structuring some of the classes and ID's
 Patrick builds out the CSS modifiying HTML where needed.
