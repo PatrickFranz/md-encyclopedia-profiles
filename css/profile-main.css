@@ -228,7 +228,25 @@ input{
     color: #db3eb1;
 }
 
+.article_title {
+    color:#4A70EB;
+    font-size:1.2em;
+}
 
+.article_date {
+    color:#B1B1B1;
+    font-size:.8em;
+}
+
+#load_more2 {
+    color:#4A70EB;
+    margin-left:40%;
+}
+
+#load_more3 {
+    color:#8B008B;
+    margin-left:40%;
+}
 
 /*---WEB COMPONENTS---*/
 
