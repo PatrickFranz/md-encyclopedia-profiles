@@ -57,7 +57,7 @@ h3{
 h4{
     line-height: 2rem;
     margin: 0; 
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
@@ -169,7 +169,10 @@ input{
     bottom: 1rem;
 }
 
+#articles {
 
+    padding-right:8em;
+}
 
 /*CLASS Selectors*/
 .bold{
@@ -231,16 +234,25 @@ input{
 .article_title {
     color:#4A70EB;
     font-size:1.2em;
+    padding-left:2em;
 }
 
 .article_date {
     color:#B1B1B1;
-    font-size:.8em;
+    font-size:.9em;
+    padding-left:2.8em;
+}
+
+.year {
+    font-size:1.3em;
+    padding-top:2em;
+
 }
 
 #load_more2 {
     color:#4A70EB;
     margin-left:40%;
+
 }
 
 #load_more3 {
@@ -550,12 +562,18 @@ input{
     text-align: left;
 }
 
+.scroll-text>p {
+    margin-left:2em;
+}
+
 #articles-div .scroll-text{
     background-color: #f1f8ff;   
 }
 
 #comments-div .scroll-text{
-    background-color: #f9f3ff;   
+    background-color: #f9f3ff;  
+
+
 }
 /* Testing purposes only */
 
