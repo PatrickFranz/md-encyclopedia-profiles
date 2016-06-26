@@ -5,7 +5,7 @@
     Date: June 2016
 */
 
-/*  COLORS & SETTINGS
+/*  COMMON COLORS & SETTINGS
     Colors
     Purple: #915fb1;
     Purple Text: #9541ba
@@ -66,9 +66,9 @@ input{
 }
 /*ID Selectors*/
 
-#white-wrapper{
+.white-wrapper{
     width: 100%;
-    text-align: center;  
+    text-align: center; 
     background-color: white;
 }
 
@@ -139,11 +139,12 @@ input{
 
 #tweets-wrapper{
     display: flex;
-    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
     font-size: 0.9rem;
     line-height: 1.5rem;
     padding: 3rem 2rem 2rem;
-    margin: 0 auto;
+    
 }
 
 #biography{
@@ -227,7 +228,25 @@ input{
     color: #db3eb1;
 }
 
+.article_title {
+    color:#4A70EB;
+    font-size:1.2em;
+}
 
+.article_date {
+    color:#B1B1B1;
+    font-size:.8em;
+}
+
+#load_more2 {
+    color:#4A70EB;
+    margin-left:40%;
+}
+
+#load_more3 {
+    color:#8B008B;
+    margin-left:40%;
+}
 
 /*---WEB COMPONENTS---*/
 
@@ -518,11 +537,26 @@ input{
 
 
 /*Twitter, Articles*/
-#twitter-feed{
+
+.writing-block{
     display: flex;
-    width: 30%;
+    flex-direction: column;
+    padding: 3rem 2rem 2rem;
+    width: 33%;
+    
 }
 
+.scroll-text{
+    text-align: left;
+}
+
+#articles-div .scroll-text{
+    background-color: #f1f8ff;   
+}
+
+#comments-div .scroll-text{
+    background-color: #f9f3ff;   
+}
 /* Testing purposes only */
 
 .red{
