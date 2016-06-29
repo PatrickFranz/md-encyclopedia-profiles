@@ -1,0 +1,608 @@
+/*
+    Stylesheet for the Encyclodpedia Profile page
+    Group: Imaginative-Levaillants-Barbet
+    Authors: P. Franz && E. Osorio
+    Date: June 2016
+*/
+
+/*  COMMON COLORS & SETTINGS
+    Colors
+    Purple: #915fb1;
+    Purple Text: #9541ba
+    Lt Purple text: #d1b3e9
+    Light Purple: #d7cae6
+    Gray background: #f5f5f5
+    Gray text: #949494
+    Button Pink: #db3eb1;
+    Lt Pink: #ff83c3
+    Twitter Blue: #55acee
+    
+
+*/
+
+/*HTML Selectors*/
+*{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+html,body{
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+a:link{
+    color: #d1b3e9;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #d1b3e9;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a:active{
+    color:#9541ba;
+}
+
+h3{
+    font-size:2rem;
+    font-weight: 300;
+    line-height: 2rem;
+}
+
+h4{
+    line-height: 2rem;
+    margin: 0; 
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+h5{
+    line-height: 2rem;
+    margin: 0; 
+    font-size: 1.1rem;
+    font-weight: 400;
+    
+}
+
+input{
+    font-family: 'Roboto', sans-serif;
+}
+/*ID Selectors*/
+
+.white-wrapper{
+    width: 100%;
+    text-align: center; 
+    background-color: white;
+}
+
+#grey-wrapper{
+    position: relative;
+    width: 100%;
+    text-align: center;  
+    background-color: #f5f5f5;
+    padding: 2rem 0;
+}
+
+#settings-navbar{
+    position: absolute;
+    top: 3rem;
+    right: 0.1rem;
+    border-radius: 5%;
+    background-color: white;
+    
+}
+
+#settings-navbar>img{
+    display: block;
+    margin: 0.3rem;    
+}
+
+#header{
+    display: inline-block;
+    position: relative;
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+    margin: 0;
+    width: 90%;
+    margin: 0 auto;  
+}
+
+#header h4{
+    margin-left: 0.3rem;
+    line-height: 2.2rem;
+}
+
+#bio-wrapper{
+    display: flex;
+    position: relative;
+    text-align: left;
+    padding: 1rem 0 0 0;
+    width: 90%;
+    margin: 0 auto;    
+    line-height: 2rem;
+    color: white;
+}
+
+#noteworthy-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    background-color: white;
+    width: 90%;
+}
+
+#gratitude-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    width: 90%;
+}
+
+#bio-work-wrapper{
+    display: flex;
+    width: 90%;
+    margin: 0 auto; 
+}
+
+#skills-wrapper{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    padding: 3rem 2rem 2rem;
+    margin: 0 auto;
+}
+
+#tweets-wrapper{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    padding: 3rem 2rem 2rem;
+    
+}
+
+#biography{
+    background: white;
+    position: relative;
+    line-height: 1.5rem;
+    text-align: left;
+    padding: 3rem 2rem 2rem;
+    width: 65%;
+}
+
+#work-history{
+    text-align: left;
+    padding: 3rem 2rem 2rem;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+}
+
+#work-caret{
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+#articles {
+
+    padding-right:8em;
+}
+
+/*CLASS Selectors*/
+.bold{
+    font-weight: bold;
+}
+
+.circle-book{
+    background-color: #8252a6;    
+    border-radius: 50%;
+    border: 0.4rem solid #d7cae6 ;  
+    padding: 0.2rem 0.3rem;  
+}
+
+.lt-purple-text{
+    color: #dfbef7;
+}
+
+.gray-text{
+    color:#949494;
+}
+
+.drk-gray-text{
+    color: #353535;
+}
+
+.grey-background{
+    background-color: #949494;
+}
+
+.large-sans-text{
+  
+    font-weight: 100;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.inline-list li{
+    display: inline-block;
+    padding: 0 0.4rem;
+    font-size: 0.70rem;
+}
+
+.left{
+    float: left;
+}
+
+.purple-text{
+    color: #9541ba;
+}
+
+.right{
+    float: right;
+}
+
+.section-title{
+    color: #db3eb1;
+}
+
+.article_title {
+    color:#4A70EB;
+    font-size:1.2em;
+    padding-left:2em;
+}
+
+.article_date {
+    color:#B1B1B1;
+    font-size:.9em;
+    padding-left:2.8em;
+}
+
+.year {
+    font-size:1.3em;
+    padding-top:2em;
+
+}
+
+#load_more2 {
+    color:#4A70EB;
+    margin-left:40%;
+
+}
+
+#load_more3 {
+    color:#8B008B;
+    margin-left:40%;
+}
+
+/*---WEB COMPONENTS---*/
+
+/*Search Box*/
+#search{
+    padding: 0.5rem;
+    padding-right: 4rem;
+    font-size: 1rem;
+    margin-top: 3px;
+    border: 1px solid #8252a6;
+    border-radius: 3%;
+    color:#8252a6
+}
+
+::-moz-placeholder{
+    color: #d7cae6;
+}
+
+::-webkit-input-placeholder{
+    color: #d7cae6;
+}
+
+:-ms-input-placeholder{
+    color: #d7cae6;
+}
+
+/*Image Carousel && Bio*/
+#bio-image{
+    width: 45%;
+}
+
+#cog-profile{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+#cog-items{
+    display: flex;
+}
+
+.dot{
+    display: inline-block;
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    margin: 0 0.2rem;
+}
+
+.active{
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+
+#bio{
+    padding: 4rem 2rem;
+    font-size: 0.85rem;
+    background-image: url(../images/hero-bg_960.jpg);  
+}
+
+#bio ul{ 
+    position: absolute; 
+    bottom: 1rem;
+}
+
+
+
+#bio li img{
+    margin-right: 0.2rem;
+}
+
+#btn-follow{
+    position: absolute;
+    top: 1.75rem;
+    right: 1rem;
+}
+
+#globe-pin{
+    color: #ff83c3;
+}
+
+#twitter-link{
+    color: #55acee;
+}
+
+/*Follow Button*/
+.btn{
+    background-color: #db3eb1;
+    color: white;
+    padding: 0.3rem 2rem;
+    border-radius: 5%;
+}
+
+.btn:hover{
+    background-color: #ff83c3;
+}
+
+.btn:active{
+    background-color: #dfbef7;
+}
+
+/*Vertical Settings Menu*/
+
+/*Noteworthy Block*/
+
+
+#noteworthy-items{
+    display: flex;
+}
+
+.note-item{
+    display: flex;
+    position: relative;
+    line-height: 1.5rem;
+    text-align: left;
+    margin: 2em 0;
+    width: 50%;
+}
+
+.note-item>img{
+    margin: 0 1em;
+}
+
+.note-show-more{
+    position: absolute;
+    top: 0.25rem;
+    right: 0.5rem;
+    font-size: 0.8rem;
+    color: #949494;
+}
+
+.note-item p{
+    font-size: 0.9rem;
+    color: #353535;
+    min-height: 8rem;
+}
+
+/*Gratitude Circles*/
+#gratitude-wrapper h4{
+    color: #949494;
+}
+
+#gratitude-circles{
+    display: flex;
+    padding: 1em 0;
+    margin: 1rem auto;
+}
+
+#gh-circle{
+    border-color: #f5e9ed;
+}
+
+#tip-circle{
+    border-color: #d7f7df;
+}
+
+#twitter-circle{
+    border-color: #d6f3fb;
+}
+
+.grat-circle{     
+    float: left;
+    position: relative;
+    max-width: 12rem;
+    min-width: 12rem;
+    max-height: 12rem;
+    min-height: 12rem;
+    border: 0.4rem solid;
+    border-radius: 50%;
+    padding: 2rem 2rem;
+    margin: 0 5rem;
+    color: #949494;
+    background-color: white;
+    font-size: 0.8rem;
+}
+
+.grat-circle a{
+    color: #b1b1b1;
+}
+
+.grat-circle a:hover{
+    color: #d4d4d4;
+    text-decoration: none;
+}
+
+.grat-circle a:visited{
+    color: #b1b1b1;
+}
+
+.grat-el{
+    margin-bottom: 1rem;
+}
+
+.grat-label{
+    position: absolute;
+    width: 100%;
+    bottom: -1.5rem;
+    left: 0;
+    font-size: 0.7rem;
+    color: #b1b1b1;
+    
+}
+
+.twitter-text{
+    color: #5ea9dd;
+}
+
+#gh-circle .btn{
+    background-color: #ec4c7a;
+    padding: 0.2rem 1rem;
+}
+
+#tip-inp{
+    max-width: 4rem;
+    border-radius: 5%;
+    font-size: 1.5rem;
+    padding: 0.3rem;
+    margin: 0.2em 0;
+}
+
+#tip-circle .btn{
+    background-color: #30b54c;    
+    padding: 0.2rem 0.5rem;
+}
+
+/*Bio/Work Section */
+.work-date{
+    font-size: 0.8rem;
+}
+
+/* Graphs */
+#skills-bar{
+    display: flex;
+    width: 60%;
+    margin: 1.5rem auto;
+    padding: 1rem;    
+}
+
+#skill-graphs{
+   margin: 1.5rem auto;    
+}
+
+.graph-row{
+    display: flex; 
+    justify-content: center; 
+    margin-bottom: 2rem; 
+}
+
+
+.h-bar{    
+    color: white;
+}
+
+.right-bar{
+    width: 70%;
+    text-align: left;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;  
+    padding-left: 1rem;
+    background: #fc5e5f;
+}
+
+.left-bar{
+    width: 30%;
+    text-align: right;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+    padding-right: 1rem;
+    background-color: #4a70eb;
+}
+
+.graph{
+    margin: 0 3rem;
+}
+.graph>h4{
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+}
+
+.red-text{
+    color: #fc5e5f;
+}
+
+.blue-text{
+    color: #4a70eb;
+}
+
+
+/*Twitter, Articles*/
+
+.writing-block{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 2rem 2rem;
+    width: 33%;
+    
+}
+
+.scroll-text{
+    text-align: left;
+}
+
+.scroll-text>p {
+    margin-left:2em;
+}
+
+#articles-div .scroll-text{
+    background-color: #f1f8ff;   
+}
+
+#comments-div .scroll-text{
+    background-color: #f9f3ff;  
+
+
+}
+/* Testing purposes only */
+
+.red{
+    background-color: lightpink;
+}
+
