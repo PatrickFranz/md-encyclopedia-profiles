@@ -138,12 +138,15 @@ input{
 }
 
 #tweets-wrapper{
-    display: flex;
-    width: 90%;
-    margin: 0 auto;
+    float: left;
+    display: inline-block;
+    width: 33%;
+    /*margin: 0 auto;*/
+    margin-left:0;
     font-size: 0.9rem;
     line-height: 1.5rem;
     padding: 3rem 2rem 2rem;
+
     
 }
 
@@ -169,11 +172,17 @@ input{
     bottom: 1rem;
 }
 
-#articles {
-
-    padding-right:8em;
+#article-title {
+    position:relative;
+    right:355px;
+    top:75px;
 }
 
+#comments-title {
+    position:relative;
+    right:15px;
+    top:40px;
+}
 /*CLASS Selectors*/
 .bold{
     font-weight: bold;
@@ -547,32 +556,72 @@ input{
     color: #4a70eb;
 }
 
+/*SCROLL BAR********************/
+
+
+/***************************/
+
+
 
 /*Twitter, Articles*/
 
 .writing-block{
-    display: flex;
+    margin-top:17px;
+    float:left;
+    background-color:white;
+    display: inline-block;
     flex-direction: column;
     padding: 3rem 2rem 2rem;
     width: 33%;
+
     
 }
 
-.scroll-text{
+.scroll-text1{
     text-align: left;
+    background-color:#f1f8ff;
+    overflow-y:scroll;
+    margin-top:-45px;
+    max-height:450px; /*************************************************/ 
+ 
 }
 
-.scroll-text>p {
+.scroll-text2{
+    text-align: left;
+    background-color:#f9f3ff;
+    overflow-y:scroll;
+    margin-top:-45px;  
+    max-height:450px; /*************************************************/ 
+     
+}
+
+.scroll-text1>p {
     margin-left:2em;
 }
 
-#articles-div .scroll-text{
-    background-color: #f1f8ff;   
+.scroll-text2>p {
+    margin-left:2em;
 }
 
-#comments-div .scroll-text{
-    background-color: #f9f3ff;  
+#articles-div {
+    float:left;
+    background-color: #f1f8ff;
+    height:550px;
+    margin-top:85px; 
+    margin-left:0;
+    padding-right:0; /**************************************/
+    margin-right:15px; /************************************/
+    width:31%;
+}
 
+#comments-div {
+    float:left;
+    background-color: #f9f3ff;  
+    height:550px;  
+    margin-top:53px;
+    padding-right:0; /**************************************/ 
+    margin-left:10px;
+    width:31%;   
 
 }
 /* Testing purposes only */
