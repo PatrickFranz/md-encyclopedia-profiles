@@ -199,6 +199,10 @@ input{
     color: #dfbef7;
 }
 
+.serif{
+    font-family: 'Roboto Slab', serif;
+}
+
 .gray-text{
     color:#949494;
 }
@@ -300,7 +304,13 @@ input{
 
 /*Image Carousel && Bio*/
 #bio-image{
+    background-color: #1c1c1c;
     width: 45%;
+}
+
+#bio-image img{
+    display: block;
+    margin: 0 auto;
 }
 
 #cog-profile{
