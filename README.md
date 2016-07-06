@@ -12,5 +12,11 @@ Eric builds out the HTML including structuring some of the classes and ID's
 Patrick builds out the CSS modifiying HTML where needed.
 Both work on finishing touches on layout, and design.
 
+##Link to Live GitHub Pages Demo
+
+https://patrickfranz.github.io/md-encyclopedia-profiles/
+
+
+
 
 
