@@ -18,6 +18,7 @@ function addListeners(){
   searchNode.addEventListener('keydown', function (event){
     if(event.keyCode === 13){ //If user hits enter
       console.log('Submitted');
+      searchNode.value="";
       //Send data to search function.
     }
   });
