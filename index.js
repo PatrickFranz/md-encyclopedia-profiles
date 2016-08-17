@@ -58,6 +58,86 @@ var userData = {
         "end-date"   : "May 2004"
       }
     ]
-  }
+  },
+
+skills : {
+    "summary" : "Mauris sed odio gravida, consequat felis at, congue sem.Donec iaculis volutpat nunc vel rutrum. In lacus urna, feugiat eu aucibus.", 
+   
+    "bargraph-left" : "70%", 
+
+    "bargraph-right"  :  "30%",
+
+    "frontend development"  : "images/fe-graph.png",
+
+    "backend development"   : "images/fe-graph.png",
+
+    "other skills"  : "images/fe-graph.png", 
+
+  },
+
+  tweets  : {
+      
+    "twitter-timeline"  :  "https://twitter.com/paul.irish",
+
+  },
+
+  articles  :  {
+   
+    "year-2016" : [
+     {
+      "title"  : "Webkit for Developers",
+      "date"   : "Mar 25,2016",
+      "source" : "paulirish.com",
+     },
+     {
+      "title"  : "Advanced Performance Audits",
+      "date"   : "Feb 12,2016",
+      "source" : "medium.com",
+     },
+     {
+      "title"  : "What's shared in all Webkit browsers",
+      "date"   : "Jan 25,2016",
+      "source" : "paulirish.com", 
+     },
+
+    ],   
+
+    "year-2015" : [
+     {
+      "title"  : "Why Moving Elements With Translate() Is Better Than Pos:abs Top/left",
+      "date"   : "Dec 18, 2015",
+      "source" : "paulirish.com",
+     },
+     {
+      "title"  : "Chrome Canary for Developers",
+      "date"   : "Nov 16, 2016",
+      "source" : "medium.com", 
+     },
+
+    ]
+ 
+ },
+
+  comments  : {
+    "year-2016" : [
+         {
+          "comment-text"  : "Quis autem vel eum iure reprehenderit. Ut enim adminima veniam, quis nostrum exercitationem ullam cor-poris suscitpit laboriosam, nisi ut aliquid.",
+          "date"   : "a day ago",
+          "source" : "paulirish.com",
+         },
+         {
+          "comment-text"  : "Quis autem vel eum iure reprehenderit qui in ea volup-tate velit esse? ullam corporis suscipit.",
+          "date"   : "3 days ago",
+          "source" : "paulirish.com",
+         },
+         {
+          "comment-text"  : "Ut enim ad minimavenia, quis nostrum exercitationem ullam corporissuscipit laboriosam, nisi ut aliquid.",
+          "date"   : "1 week ago",
+          "source" : "medium.com", 
+         },
+
+        ]   
+
+  },  
 
 }
